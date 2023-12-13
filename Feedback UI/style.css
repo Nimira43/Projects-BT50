@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkred;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.panel-container {
+    background-color: orangered;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+}
+
+.panel-container strong {
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.ratings-container {
+    display: flex;
+    margin: 20px 10px;
+}
+
+.rating {
+    flex: 1;
+    background-color: red;
+    border-radius: 14px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active {
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px 10px rgba (0, 0, 0, 0.4);
+}
+
+.rating img {
+    width: 40px;
+}
+
+.rating small {
+    color: black;
+    font-weight: bolder;
+    font-size: 23px;
+    display: inline-block;
+    margin: 10px 0 0;
+}
+
+.rating:hover small,
+.rating.active small {
+    color: goldenrod;
+}
+
+.btn {
+    background-color: black;
+    color: darkgoldenrod;
+    border: 0;
+    border-radius: 50px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.95)
+}
+
+.fa-heart {
+    color: darkred;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
