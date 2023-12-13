@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.box {
+    background-color: yellow;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%); /* maybe 400% or 200% */
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%); /* maybe 400% or 200% */
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+/*
+code included by instructor which I'm not going to use...
+
+.box h2 {
+    font-size: 45px;
+}
+
+this wouldn't work because it would mess up my box text
+
+*/
+
+
+
+
