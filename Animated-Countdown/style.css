@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(146deg, rgba(145, 11, 11, 0.801), rgb(187, 87, 0), rgb(229, 158, 5) 72%, rgb(253, 128, 45));
+    font-family: 'Princess Sofia', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 h4 {
+    font-family: 'Rubik Iso', sans-serif;
+}
+
+h1 {
+    
+    font-size: 45px;
+    color: yellow;
+    margin: 8px;
+    
+}
+
+h4 {
+    font-size: 25px;
+    color: black;
+    margin: 8px;
+}
+
+
+.counter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.counter.hide {
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide 0.2s ease-out;
+}
+
+@keyframes hide {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+.final {
+    background-color: darkred;
+    border: 7px solid black;
+    border-radius: 35px;
+    
+    padding: 25px 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+}
+
+.final.show {
+    transform: translate(-50%, -50%) scale(1);
+    animation: show 0.2s ease-out;
+}
+
+@keyframes show {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.nums {
+    color: darkred;
+    font-weight: bolder;
+    font-size: 70px;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 90px;
+}
+
+/*
+
+transform-origin docs -
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin#try_it
+
+*/
+
+.nums span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(120deg);
+    transform-origin: bottom center;
+}
+
+.nums span.in {
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: goIn 0.5s ease-in-out;
+}
+
+.nums span.out {
+    animation: goOut 0.5s ease-in-out;
+}
+
+@keyframes goIn {
+    0% {
+        transform: translate(-50%, -50%) rotate(120deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes goOut {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-120deg);
+    }
+}
+
+button {
+    background-color: black;
+    color: yellow;
+    font-weight: bolder;
+    padding: 3px 6px;
+    border: 2px solid yellow;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: yellow;
+    color: red;
+    border: 2px solid red;
+}
