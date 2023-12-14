@@ -1,0 +1,1 @@
+These projects were in Brad Traversy's 50 Projects course. The were the first JavaScript and CSS projects I've done. At first I was just matching what Brad did in the course but later on, after getting more experience, I experimented and changes things up a bit.
