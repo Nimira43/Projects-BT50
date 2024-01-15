@@ -1,0 +1,14 @@
+TMDB
+
+username -  		Nimira2023
+password -			Lenny21
+email - 			n.rabone72@aol.com
+
+
+API Key (v3 auth) -	b00a6dc639e096f89fdcb34e4471bde4
+
+Example API Request - 	https://api.themoviedb.org/3/movie/550?api_key=b00a6dc639e096f89fdcb34e4471bde4
+
+API Read Access Token (v4 auth) -
+
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMDBhNmRjNjM5ZTA5NmY4OWZkY2IzNGU0NDcxYmRlNCIsInN1YiI6IjYzZjdmMGJlNDZmMzU0MDA5ZDFhOWVjYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.w9WDRY564HEduMUHK6Qa8vo4vRYnDpbpR3EOAgSTm2w
